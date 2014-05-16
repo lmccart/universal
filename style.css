@@ -1,11 +1,7 @@
 body {
-  padding: 100px;
+  padding: 80px 100px;
   font: 18px Times, Arial, sans-serif;
   line-height: 30px;
-}
-
-#letter_form {
-  margin-bottom: 50px;
 }
 
 #container {
@@ -59,7 +55,7 @@ select, input, textarea {
 
 /*** DONE BUTTONS ***/
 #done {
-  height: 150px;
+  height: 80px;
   width: 135px;
   margin: 0 auto;
   padding-left: 15px;
@@ -101,7 +97,7 @@ select, input, textarea {
   background: white;
   border: 2px dashed black;
   position: absolute;
-  top: 50px;
+  top: 40px;
   width: 500px;
   margin: 50px;
   padding: 10px;
