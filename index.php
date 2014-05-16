@@ -76,7 +76,7 @@
 
     <br><br>
 
-    Recipient email(s): <input type='text'><br>
+    Recipient email(s): <input id="recipients" type='text'><br>
     Your email: <input type='text'><br><br>
 
     <div id="done">
@@ -97,7 +97,7 @@
   </div>
 
   <div id="overlay"></div>
-  <div id="copied">* copied to clipboard *</div>
+  <div id="note"></div>
   <div id="preview">
     <div id="x">x</div>
     <div id="letter"></div>

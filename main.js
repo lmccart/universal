@@ -39,21 +39,14 @@ window.onload=function(){
   });
 
   $('#send').click(function() {
+    var recipients = $('#recipients').val();
     console.log($('#letter_form').contents());
-
     var contents = getContents();
-
+    showPreview('This message was sent to '+recipients+'.');
   })
 
   $('#copy').click(function() {
-
-    var contents = getContents();
-    $('#letter').html(contents);
-
-    $('#preview').show();
-    $('#overlay').show();
-    $('#copied').show();
-    $('#copied').delay(3000).fadeOut();
+    showPreview('This text is copied to your clipboard.');
   });
 
   $('#x').click(hidePreview);
@@ -73,7 +66,20 @@ function resizeForContent(elt, content, active) {
 function hidePreview() {
   $('#preview').hide();
   $('#overlay').hide();
-  $('#copied').hide();
+  $('#note').hide();
+}
+
+function showPreview(note) {
+  var contents = getContents();
+  $('#letter').html(contents);
+
+  $('#preview').show();
+  $('#overlay').show();
+  $('#note').text(note);
+  $('#note').show();
+  $('#note').delay(3000).fadeOut();
+
+  $(window).scrollTop(0);
 }
 
 function getContents() {

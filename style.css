@@ -119,7 +119,7 @@ select, input, textarea {
   padding: 20px;
 }
 
-#copied {
+#note {
   color: white;
   background: #53CCFC;
   text-align: center;
