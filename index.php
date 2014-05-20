@@ -12,7 +12,6 @@
     Dear <input type='text'>,
     <br><br>
 
-
     <?php 
       
       $regret_opts = array('_________________', 'very', 'somewhat', 'not at all');
@@ -21,7 +20,6 @@
       $type_opts = array('_________________', 'women', 'minorities', 'young people', 'old people', 'unknown people');
 
     ?>
-
 
     Thank you for your invitation. However, I 
     <select>
